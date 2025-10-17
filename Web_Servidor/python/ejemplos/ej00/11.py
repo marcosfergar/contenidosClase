@@ -1,0 +1,1 @@
+# Escribe un script que pida ao usuario primeiro o seu salario bruto e despois o IRFP en tanto por cen e indícalle o seu salario neto. Utiliza a seguinte fórmula para o calculo: salario_neto = salario_bruto - (salario_bruto * IRPF). Mostra o resultado por pantalla.

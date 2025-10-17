@@ -1,0 +1,44 @@
+<libros>
+  <libro>
+    <titulo>Everyday Italian(1)</titulo>
+  </libro>
+  <libro>
+    <titulo>Harry Potter(1)</titulo>
+  </libro>
+  <libro>
+    <titulo>XQuery Kick Start(5)</titulo>
+  </libro>
+  <libro>
+    <titulo>Learning XML(1)</titulo>
+  </libro>
+  <libro>
+    <titulo>Clean Code(1)</titulo>
+  </libro>
+  <libro>
+    <titulo>A Brief History of Time(1)</titulo>
+  </libro>
+  <libro>
+    <titulo>1984(1)</titulo>
+  </libro>
+  <libro>
+    <titulo>The Power of Habit(1)</titulo>
+  </libro>
+  <libro>
+    <titulo>Sapiens: A Brief History of Humankind(1)</titulo>
+  </libro>
+  <libro>
+    <titulo>The Pragmatic Programmer(2)</titulo>
+  </libro>
+  <libro>
+    <titulo>Steve Jobs(1)</titulo>
+  </libro>
+  <libro>
+    <titulo>The Gruffalo(2)</titulo>
+  </libro>
+  <libro>
+    <titulo>Rich Dad Poor Dad(1)</titulo>
+  </libro>
+  <libro>
+    <titulo>The Name of the Wind(1)</titulo>
+  </libro>
+</libros>

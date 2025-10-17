@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zodiaco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="zodiaco.xsd">
+    <signo id="1">
+        <nombre>Aries</nombre>
+        <fechaInicio>21-03</fechaInicio>
+        <fechaFin>19-04</fechaFin>
+    </signo>
+    <signo id="2">
+        <nombre>Tauro</nombre>
+        <fechaInicio>20-04</fechaInicio>
+        <fechaFin>20-05</fechaFin>
+    </signo>
+    <signo id="3">
+        <nombre>Geminis</nombre>
+        <fechaInicio>21-05</fechaInicio>
+        <fechaFin>20-06</fechaFin>
+    </signo>
+    <signo id="4">
+        <nombre>Cancer</nombre>
+        <fechaInicio>21-06</fechaInicio>
+        <fechaFin>22-07</fechaFin>
+    </signo>
+    <signo id="5">
+        <nombre>Leo</nombre>
+        <fechaInicio>23-07</fechaInicio>
+        <fechaFin>22-08</fechaFin>
+    </signo>
+    <signo id="6">
+        <nombre>Virgo</nombre>
+        <fechaInicio>23-08</fechaInicio>
+        <fechaFin>22-09</fechaFin>
+    </signo>
+    <signo id="7">
+        <nombre>Libra</nombre>
+        <fechaInicio>23-09</fechaInicio>
+        <fechaFin>22-10</fechaFin>
+    </signo>
+    <signo id="8">
+        <nombre>Escorpio</nombre>
+        <fechaInicio>23-10</fechaInicio>
+        <fechaFin>21-11</fechaFin>
+    </signo>
+    <signo id="9">
+        <nombre>Sagitario</nombre>
+        <fechaInicio>22-11</fechaInicio>
+        <fechaFin>21-12</fechaFin>
+    </signo>
+    <signo id="10">
+        <nombre>Capricornio</nombre>
+        <fechaInicio>22-12</fechaInicio>
+        <fechaFin>19-01</fechaFin>
+    </signo>
+    <signo id="11">
+        <nombre>Acuario</nombre>
+        <fechaInicio>20-01</fechaInicio>
+        <fechaFin>18-02</fechaFin>
+    </signo>
+    <signo id="12">
+        <nombre>Piscis</nombre>
+        <fechaInicio>19-02</fechaInicio>
+        <fechaFin>20-03</fechaFin>
+    </signo>
+</zodiaco>

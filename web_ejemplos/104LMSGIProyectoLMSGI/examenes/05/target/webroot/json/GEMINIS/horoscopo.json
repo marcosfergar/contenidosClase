@@ -1,0 +1,12 @@
+{
+	"horoscope": {
+		"source": "Astrologia",
+		"date": "09/06/2025",
+		"sign": {
+			"message": "Hoy podrías conseguir cierta paz y tranquilidad gracias a tu equilibrio interno, Géminis. En general, disfrutarás de la armonía y prosperidad resultantes de un trabajo organizado y pulcro; además, podrás conseguir ganancias gracias a tus amistades o a los viajes. Tendrás mucha agilidad mental e ingenio... utiliza estas energías para innovar, para emprender nuevos proyectos que te lleven al lugar que quieres y hagan realidad tus sueños.",
+			"numbers": "2, 9, 17, 22, 33, 41",
+			"compatibility": "Aries",
+			"id": "3"
+		}
+	}
+}

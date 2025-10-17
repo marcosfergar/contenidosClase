@@ -1,0 +1,14 @@
+biography: Steve Jobs
+children: Harry Potter
+children: The Gruffalo
+cooking: Everyday Italian
+fantasy: The Name of the Wind
+fiction: 1984
+finance: Rich Dad Poor Dad
+history: Sapiens: A Brief History of Humankind
+programming: Clean Code
+programming: The Pragmatic Programmer
+science: A Brief History of Time
+self-help: The Power of Habit
+web: Learning XML
+web: XQuery Kick Start

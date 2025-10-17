@@ -1,0 +1,12 @@
+{
+	"horoscope": {
+		"source": "Astrologia",
+		"date": "09/06/2025",
+		"sign": {
+			"message": "Contarás hoy con una gran madurez y responsabilidad, Libra, con confianza en ti, siendo persistente, paciente y demostrando tu destreza y habilidad en el trabajo... llegarás a tus metas! En general, serás una persona muy organizada, analítica y capaz de tomar las decisiones más rápidas y acertadas. Finalmente, tus actividades podrían estar mejor remuneradas o también es posible que recibas alguna noticia econímica favorable.",
+			"numbers": "9, 20, 23, 28, 30, 48",
+			"compatibility": "Sagitario",
+			"id": "7"
+		}
+	}
+}

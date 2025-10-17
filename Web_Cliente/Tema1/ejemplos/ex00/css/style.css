@@ -1,0 +1,30 @@
+/* body{
+    width: 640px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+p {
+    font-size: 2em;
+    color:color-mix(in srgb, blue 50%, red 50%);
+}
+
+#cabecera{
+    font-size: 3em;
+    color: violet;
+}
+
+.cuadro{
+    border-style: solid;
+    border-color: rgb(64, 224, 208);
+    background-color:teal;
+}
+
+div{
+    border-style: solid;
+    outline-style: solid;
+    background-color:rgb(117, 252, 169);
+    outline-color: rgb(200, 245, 0);
+
+    box-shadow: 5px 5px blue,8px 8px goldenrod;
+}

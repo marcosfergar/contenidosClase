@@ -1,0 +1,59 @@
+button {
+  position: fixed;         /* Fija el botón en la pantalla */
+  bottom: 20px;            /* Distancia desde el borde inferior */
+  right: 20px;             /* Distancia desde el borde derecho */
+  padding: 12px 18px;      /* Espaciado interno */
+  background-color: #007bff; /* Color de fondo (azul) */
+  color: white;            /* Color del texto */
+  border: none;            /* Sin borde */
+  border-radius: 8px;      /* Bordes redondeados */
+  font-size: 16px;         /* Tamaño de texto */
+  cursor: pointer;         /* Cursor de mano al pasar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  z-index: 1000;           /* Asegura que esté por encima de otros elementos */
+}
+
+
+
+body{
+    width: 90%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{ 
+text-align: center;
+} 
+h2 {
+  font-family: "Montserrat", sans-serif;
+    text-align: center;
+  font-size: 1.5em;
+  font-style: normal;
+
+}
+h3 {
+    font-family: "Merriweather", serif;
+    font-size: 1.25em; 
+    font-style: normal;
+    
+  }
+
+a:hover{
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+    color: #f8f9fa;
+}
+
+header{
+    background-color:#343a40 ;
+    color:#f8f9fa ;
+    align-content: center;
+    text-align: center;
+}
+footer{
+    padding: 1px;
+    background-color:#343a40 ;
+    color:#f8f9fa ;
+    text-align: center;
+}

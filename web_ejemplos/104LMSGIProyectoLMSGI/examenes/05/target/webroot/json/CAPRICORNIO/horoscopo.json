@@ -1,0 +1,12 @@
+{
+	"horoscope": {
+		"source": "Astrologia",
+		"date": "09/06/2025",
+		"sign": {
+			"message": "Tu comportamiento hoy será muy activo y determinado, con mucha experiencia y autoridad; querrás controlar y dirigir a los demás... y lo harás bien, Capricornio. Serás una persona muy profesional y analítica; además, tendrás ahora nuevas ideas y planes. De todos modos, deberías tratar de fomentar la cooperación de las personas que trabajan contigo para así lograr un equipo competente. Estás en tu mejor momento y tienes que seguir concentróndote en las metas de tu vida.",
+			"numbers": "7, 27, 30, 32, 39, 47",
+			"compatibility": "Escorpio",
+			"id": "10"
+		}
+	}
+}

@@ -1,0 +1,24 @@
+<!ELEMENT biblioteca (libro)+>
+<!--
+    + es 1 o mas (sin limite)
+    ? es 0 o 1
+    
+es 0 o mas (sin limite)
+-->
+<!ELEMENT libro (titulo, autores, anio)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autores (autor+)>
+<!ELEMENT autor (nombre,apellido,nacionalidad)>
+<!ELEMENT nombre (#PCDATA)><!-- Exite tambien EMPTY y ANY (cualquier cosa)-->
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+<!ATTLIST libro idlibro ID #REQUIRED>
+<!ATTLIST libro genero CDATA #IMPLIED><!-- CDATA es como PCDATA es decir texto y numeros-->
+<!ATTLIST libro idioma CDATA "Español">
+<!ATTLIST libro formato (impreso|digital) "impreso">
+<!ATTLIST libro referencia IDREFS #IMPLIED><!-- Implied siginifica opcional-->
+<!-- #FIXED "valor"
+El atributo tiene un valor fijo, y no se puede cambiar.
+Si se pone, debe ser exactamente ese valor.
+-->

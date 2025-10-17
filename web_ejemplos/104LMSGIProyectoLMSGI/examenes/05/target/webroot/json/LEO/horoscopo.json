@@ -1,0 +1,12 @@
+{
+	"horoscope": {
+		"source": "Astrologia",
+		"date": "09/06/2025",
+		"sign": {
+			"message": "Leo, con simpatía, comprensión y honradez será como lograrás mejores resultados hoy. En general, demostrarás un genuino interés por el bienestar de los demás; tu actitud será muy madura y generosa, con cierto magnetismo personal y unas determinaciones firmes para enfrentarte a cualquier tipo de reto u oposición. Escucha a la voz de tu intuición, pero toma unas decisiones prácticas y lógicas.",
+			"numbers": "18, 21, 28, 31, 37, 41",
+			"compatibility": "Aries",
+			"id": "5"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(241, 240, 240);
+    padding: 2rem;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+
+}
+.tarjeta{
+    background-color: white;
+    padding: 1rem;
+    border: 1xp solid rgb(124, 122, 122);
+    border-radius: 8px;      
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

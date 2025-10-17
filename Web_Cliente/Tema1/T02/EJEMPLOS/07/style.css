@@ -1,0 +1,47 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(221, 240, 220);
+    margin-top: 10%;
+    justify-items: center;
+
+}
+h1{
+    color: rgb(1, 178, 22);
+}
+label{
+    color: rgb(1, 178, 22);
+    font-weight: bold;
+}
+.caja{
+    width: 60%;    
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    padding: 3%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    
+}
+
+.jugada{
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid rgb(1, 178, 22);
+    width: 60%;
+    text-align: center;
+}
+button{
+    margin-top: 10px;
+    background-color: rgb(1, 178, 22);
+    border-radius: 5px;
+    padding: 10px;    
+    border: 2px solid rgb(1, 178, 22);
+    color: white;
+    width: 60%;
+    
+}
+#resultado{
+    background-color: antiquewhite;
+}

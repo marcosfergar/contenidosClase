@@ -1,0 +1,40 @@
+body, html{
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      #principal{
+        flex: 1;
+      }
+
+      .Fondo_oscuro{
+        background-color: black;
+        color: white;
+      }
+
+      .Rotar{
+        transform: rotate(2deg);
+      }
+      footer{
+        background-color: #333333;
+        color: white;
+        padding: 10px;
+      }
+      footer a{
+        color: #3498db;
+        text-decoration: none;
+      }
+      footer a:visited{
+        color: #657043;
+      }
+      [type="button"]{
+        background-color: #3498db;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 7px 15px;
+      }
+      [type="button"]:hover{
+        background-color: #3498db;
+      }

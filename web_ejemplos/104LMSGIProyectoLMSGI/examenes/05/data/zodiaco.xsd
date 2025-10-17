@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="zodiaco">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="signo" minOccurs="1" maxOccurs="12">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Aries"/>
+                                        <xs:enumeration value="Tauro" />
+                                        <xs:enumeration value="Geminis" />
+                                        <xs:enumeration value="Cancer" />
+                                        <xs:enumeration value="Leo" />
+                                        <xs:enumeration value="Virgo" />
+                                        <xs:enumeration value="Libra" />
+                                        <xs:enumeration value="Escorpio" />
+                                        <xs:enumeration value="Sagitario" />                                        
+                                        <xs:enumeration value="Capricornio" />
+                                        <xs:enumeration value="Acuario" />
+                                        <xs:enumeration value="Piscis" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="fechaInicio">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{2}-\d{2}" />
+                                    </xs:restriction>
+                                </xs:simpleType>                                                                       
+                            </xs:element>
+                            <xs:element name="fechaFin">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{2}-\d{2}" />
+                                    </xs:restriction>
+                                </xs:simpleType>     
+                            </xs:element>
+                        </xs:sequence>
+
+                        <xs:attribute name="id" use="required">                
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:minLength value="1"></xs:minLength>
+                                    <xs:maxLength value="2"></xs:maxLength>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        
+                        
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>

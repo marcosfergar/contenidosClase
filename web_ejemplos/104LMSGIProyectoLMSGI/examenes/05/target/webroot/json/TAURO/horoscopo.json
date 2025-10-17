@@ -1,0 +1,12 @@
+{
+	"horoscope": {
+		"source": "Astrologia",
+		"date": "09/06/2025",
+		"sign": {
+			"message": "Tauro, debes enfrentarte a las nuevas responsabilidades y tener más confianza en ti, sin temer al fracaso. Aprovecha la energía del día para la expansión en el ámbito económico: no te arrepentirás. Por otra parte, deberías pensar de una forma más optimista... todo lo económico se resolverá de una manera positiva para ti: ten paciencia. Y recuerda: la diplomacia será tu mejor aliada.",
+			"numbers": "2, 7, 10, 16, 26, 29",
+			"compatibility": "Virgo",
+			"id": "2"
+		}
+	}
+}

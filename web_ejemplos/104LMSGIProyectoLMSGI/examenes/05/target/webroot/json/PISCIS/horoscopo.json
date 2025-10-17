@@ -1,0 +1,12 @@
+{
+	"horoscope": {
+		"source": "Astrologia",
+		"date": "09/06/2025",
+		"sign": {
+			"message": "Piscis, hoy mostrarás tu capacidad de liderazgo, carácter e inteligencia. En general, es posible que disfrutes de éxito en el trabajo y de unas inversiones acertadas. Tenderás a la cautela, a la diplomacia y a la perseverancia en tus relaciones con los demás; también demostrarás un autocontrol excepcional y sacarás partido de todas las oportunidades que se te presenten. Eres un ser muy perceptivo y te sueles dar cuenta cuando alguien pretende engañarte... haz uso de esta facultad!",
+			"numbers": "9, 17, 27, 34, 48, 49",
+			"compatibility": "Cáncer",
+			"id": "12"
+		}
+	}
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>        
+        .reja{
+            display: grid;
+            background: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+        .reja div {
+            border-style: solid;
+            border-color: rgba(119, 62, 55, 0.226);
+            background-color: salmon;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .ejem1{
+            grid-template-columns: 100px 100px 100px;
+        }
+        .ejem2{
+            grid-template-columns: 1fr 2fr 1fr;
+
+        }
+        .ejem3{
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 80px 150px;
+        }
+        .ejem4{
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .ejem5{
+            grid-template-columns: 150px 1fr 1fr;
+            grid-template-rows: 60px 200px 60px;
+            grid-gap: 10px;
+        }
+        .ejem5 .item1{
+            grid-column: 1/4;
+        }
+        .ejem5 .item2{
+            grid-row: 2;
+        }
+        .ejem5 .item3{
+            grid-column: 2;
+            grid-row: 2;
+        }
+        .ejem5 .item4{
+            grid-row: 3;
+            grid-column: 1/3;
+        }
+        .ejem5 .item5{
+            grid-row: 2/4;
+            grid-column: 3;
+        }
+        .ejem6{
+            grid-template-columns: 1fr 0.5fr 1fr;
+            grid-template-rows: 60px 200px 60px;
+            grid-gap: 10px;
+            grid-template-areas: 
+                "my-header my-header my-deader"
+                "my-nav my-nav my-nav"
+                "my-section my-section my-section"
+                "my-aside my-aside my-aside"
+                "my-footer my-footer my-footer"
+            ;
+        }
+        .ejem6 .header{
+            background-color:cornflowerblue;            
+            grid-area: my-header;
+            grid-column: 1/4;
+            grid-row: 1;
+        }
+        .ejem6 .menu{
+            background-color: rgb(236, 236, 13);
+            grid-row: 2;
+        }
+        .ejem6 .content{
+            background-color: green;
+            grid-column: 2;
+            grid-row: 2;
+        }
+        .ejem6 .ads{
+            background-color: pink;
+            grid-row: 2;
+        }
+        .ejem6 .footer{
+            background-color: red;
+            grid-area: pe;
+            grid-row: 3;
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <h1>1.Grid basico con columnas</h1>
+    <div class="reja ejem1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h2>2.Usando fracciones (fr)</h2>
+    <div class="reja ejem2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h2>3.Grid con filas definidas</h2>
+    <div class="reja ejem3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+
+    </div>
+    <h2>4.Grid con filas definidas</h2>
+    <div class="reja ejem4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h2>5.Controlando posicion con grid-column y grid-row</h2>
+    <div class="reja ejem5">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <h2>5.Usando grid-template-areas</h2>
+    <div class="reja ejem6">
+        <div class="header">Cabecera</div>
+        <div class="menu">Menu</div>
+        <div class="content">Contenido</div>
+        <div class="ads">Publicidad</div>
+        <div class="footer">Pe</div>
+    </div>
+</body>
+</html>

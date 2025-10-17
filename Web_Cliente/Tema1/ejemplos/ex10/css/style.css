@@ -1,0 +1,86 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(224, 224, 224);
+}
+
+h2{
+    color: rgb(64, 64, 136);
+    font-weight: bold;
+}
+header{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(53, 53, 116);
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+main{
+    max-width: 1200px;
+    
+}
+section{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria{
+  
+    
+    gap: 1.5rem;    
+    margin: 10px;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+    background-color: white;
+    
+    max-width: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 1xp solid rgb(124, 122, 122);
+    flex: 1 1 240px;
+    /* 1-> crecimiento
+    1-> reduccion
+    240 -> tamaño predefinido */
+    transition: transform 0.2s ease-in-out;
+}
+.galeria:hover{
+    transform: scale(1.03);
+}
+div img{
+    width: 100%;
+    border-radius: 8px;
+}
+footer{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(53, 53, 116);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+@media (max-width:600px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
+    .galeria{
+        max-width: 50%;
+    }
+}
+@media (min-width:601px) and (max-width:900px) {
+    main{
+        justify-content: space-evenly;
+        background-color: aqua;
+    }
+}
+@media (min-width:901px) {
+    main{
+        justify-content: space-around;
+        background-color: blue;
+    }
+}

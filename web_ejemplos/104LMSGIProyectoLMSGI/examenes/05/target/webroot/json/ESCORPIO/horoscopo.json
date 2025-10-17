@@ -1,0 +1,12 @@
+{
+	"horoscope": {
+		"source": "Astrologia",
+		"date": "09/06/2025",
+		"sign": {
+			"message": "La ansiedad, las indecisiones y las dudas de hoy tal vez te causen cierta inseguridad, Escorpio; también las disputas y penas en el amor. Tienes que comprender que comportándote de una forma agresiva dañas a los demás. Además, es posible que soportes demasiadas tensiones y te mostrarás desafiante ante cualquier circunstancia. Finalmente, los proyectos que tienes quizá están sufriendo retrasos; deberás ejercitarte en la paciencia.",
+			"numbers": "4, 7, 15, 19, 21, 22",
+			"compatibility": "Capricornio",
+			"id": "8"
+		}
+	}
+}

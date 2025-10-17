@@ -1,0 +1,12 @@
+{
+	"horoscope": {
+		"source": "Astrologia",
+		"date": "09/06/2025",
+		"sign": {
+			"message": "Tal vez hoy sea un día de tensión en los asuntos familiares o con tus seres queridos, Virgo; quizá pienses que debes trabajar más que los demás y esto te cause demasiadas presiones... Todo se conseguirá actuando de una forma responsable, con perseverancia y concentréndote en el trabajo, aunque es posible que sientas cierto descontento con el entorno que te rodea. No discutas!",
+			"numbers": "2, 10, 21, 32, 39, 46",
+			"compatibility": "Tauro",
+			"id": "6"
+		}
+	}
+}

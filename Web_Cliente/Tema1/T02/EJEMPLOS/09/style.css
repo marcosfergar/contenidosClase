@@ -1,0 +1,85 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(215, 219, 215);
+    margin-top: 10%;
+    justify-items: center;
+
+}
+h1{
+    color: rgb(1, 128, 178);
+    text-align: center;
+}
+h2{
+
+    color: rgb(1, 128, 178);
+    
+}
+label{
+    color: rgb(1, 128, 178);
+    font-weight: bold;
+}
+.caja{
+    width: 60%;    
+    border-radius: 10px;
+    background-color: white;
+    
+    padding: 3%;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    
+}
+.crear_evento{
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+form{        
+    text-align: end;
+}
+
+label{
+    float: left;
+}
+
+
+.listar_evento{
+    text-align: center;
+    display: flexbox;
+    
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 5px;
+}
+input{
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid rgb(1, 128, 178);
+    width: 60%;
+
+}
+.botonCrear{
+    margin-top: 10px;
+    background-color: rgb(1, 128, 178);
+    border-radius: 5px;
+    padding: 10px;    
+    border: 2px solid rgb(1, 128, 178);
+    color: white;
+    width: 50%;
+    
+}
+
+.botonEvent{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(88, 89, 90);
+    border-radius: 5px;
+    padding: 10px;    
+    border: 2px solid rgb(88, 89, 90);
+    color: white;
+    width: 130px;
+}

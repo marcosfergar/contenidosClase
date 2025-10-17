@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="social-networks">
+        <a href="https://www.youtube.com/?app=desktop&hl=es" data-subs="44000">Twitter</a>
+        <a href="https://www.youtube.com/?app=desktop&hl=es" data-subs="10000">Youtube</a>
+        <a href="https://www.youtube.com/?app=desktop&hl=es" data-subs="13000">Twich</a>
+    </div>
+    <script>
+        const links = document.querySelectorAll("#social-networks a"); 
+        console.log(links[0].dataset.nueo);
+        console.log(links[1].getAttribute("data-nuevo"));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿div{
+    padding: 1%;
+    margin-bottom: 5px;
+    width: 270px;
+}
+.div1{    
+    border: solid;
+    background-repeat: no-repeat;
+    border-color: orange;    
+    text-align: center;
+    }
+#fecha{
+    background-color: gray;
+    color: white;
+    width: auto;
+}
+
+    body{      
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{ 
+    text-align: center;
+    } 
+    h2 {
+      font-family: "Montserrat", sans-serif;
+    
+      font-size: 1.5em;
+      font-style: normal;
+      text-decoration: overline ;
+    }
+    h3 {
+        font-family: "Merriweather", serif;
+        font-size: 1.25em; 
+        font-style: normal;
+        
+      }
+
+    
+    header{
+        background-color:orange ;
+        color:#f8f9fa ;
+        align-content: center;
+        text-align: center;
+        
+    }
+    footer{
+        height: 50px;
+        padding: 1px;
+        background-color:orange ;
+        color:#f8f9fa ;
+        text-align: center;
+    }
+

@@ -1,0 +1,13 @@
+Usas const cuando NO vas a reasignar el valor de una variable.
+Pero si es un objeto o array, puedes modificar su contenido.
+
+Siempre que el valor no necesite cambiar.
+Te protege de cambios accidentales → buena práctica moderna.
+
+
+Usas let para declarar variables cuyo valor puede cambiar.
+Cuando necesites reasignar el valor de una variable.
+En bucles (for, while, etc.)
+En condiciones (if, switch).
+
+var tiene alcance de función, no de bloque, lo que puede causar errores inesperados.

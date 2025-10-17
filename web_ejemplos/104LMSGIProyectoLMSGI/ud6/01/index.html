@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>u6.1 JSON: Marcos Fernández García</title>
+    <style>
+        #parrafo {
+            white-space: pre-line;
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #parrafo span {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JSon1</h1>
+    <div id="parrafo"></div>
+    <script>
+        fetch('01.json')
+            .then(response => {
+                if (!response.ok) throw new Error("Error en tiempo de ejecución al cargar")
+                return response.json();
+            }
+            )
+            .then(jsonData => {
+                console.log(jsonData);
+                p = document.getElementById('parrafo');
+                p.innerHTML = `Nombre: ${jsonData.Nombre} Edad: ${jsonData.Edad}`
+            })
+            .catch(error => console.log(error)); 
+    </script>
+</body>
+
+</html>

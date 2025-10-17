@@ -1,0 +1,13 @@
+
+{
+	"horoscope": {
+		"source": "Astrologia",
+		"date": "09/06/2025",
+		"sign": {
+			"message": "Aries, hoy tendrás mucha facilidad para aprender; además, gracias a un trabajo cuidadoso y constructivo y con capacidad para expresarte, podrás lograr bienes materiales. Utiliza tu elevada energía y talento. El éxito será duradero en el futuro si tu trabajo es constante y intenso. Además, tu situación financiera podría experimentar un cambio favorable y espectacular, también podrías tener ascensos y reconocimiento profesional.",
+			"numbers": "10, 13, 37, 39, 43, 47",
+			"compatibility": "Geminis",
+			"id": "1"
+		}
+	}
+}

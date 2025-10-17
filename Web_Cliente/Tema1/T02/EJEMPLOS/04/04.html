@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el numero</title>
+    <script src="./04.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="caja">
+        <h1>Adivina el numero</h1>
+        <p>Estoy pensando en un numero entre el 1 y el 100</p>
+        <p>¿Cuantos intentos necesitas para adivinarlo?</p>
+
+        <div class="casilla">
+            <input type="number" id="jugada" placeholder="Inserta tu suposicion"><br>
+            <button id="boton" onclick="comprobarSuposicion()">Adivinar</button>
+        </div>
+
+        <div class="resultado">
+            <p id="mensaje"></p>
+            <p id="intentos"></p>
+        </div>
+
+    </div>
+</body>
+</html>
