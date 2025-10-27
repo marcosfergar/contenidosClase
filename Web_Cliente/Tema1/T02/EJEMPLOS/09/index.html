@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda de Eventos</title>
-
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -20,7 +19,7 @@
                 <input type="date" name="date" id="date"><br><br>
                 <label for="text">Nombre del Evento:</label>
                 <input type="text" name="text" id="text" placeholder="Ex: Examen">
-                <button class="botonCrear" type="button" onclick="calcularAniversario()">Guardar Evento</button>
+                <button class="botonCrear" type="button" onclick="añadirEvento()">Guardar Evento</button>
             </form>
         </div>
 
@@ -35,12 +34,13 @@
                 <button class="botonEvent" type="button" onclick="filtrarEventos('proxAge')">Proximo Año</button>
                 <button class="botonEvent" type="button" onclick="filtrarEventos('todos')">Todos</button>
             </div>
-            <ul>
 
+            <ul id="listaDeEventos">
+                
             </ul>
         </div>
-
     </div>
+
     <script src="./script.js" defer></script>
 </body>
 

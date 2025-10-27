@@ -83,3 +83,7 @@ input{
     color: white;
     width: 130px;
 }
+
+.botonCrear:active{
+    filter: brightness(0.7);
+}
