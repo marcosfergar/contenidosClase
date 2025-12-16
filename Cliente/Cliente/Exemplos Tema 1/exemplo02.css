@@ -1,0 +1,35 @@
+/* Estilos para a clase "texto" */
+.texto {
+    font-family: Verdana;
+    font-size: 12pt;
+    text-align: right;
+}
+
+/* Estilos para os distintos identificadores dos parágrafos */
+#paragrafo1 {
+    font-weight: 800;
+}
+
+#paragrafo2 {
+    font-family: 'Trebuchet MS';
+}
+
+#paragrafo3 {
+    color:blueviolet;
+    text-align: left; /* O aliñamento pasa á esquerda porque o id ten maior nivel xerárquico que as clases */
+}
+
+/* Estilos para a clase "nova" */
+.nova {
+    font-family: monospace; /* O tipo de letra pasa a monospace porque esta clase foi definida máis abaixo que a clase "texto" */
+}
+
+/* Estilos para os elementos de tipo parágrafo <p> */
+p {
+    text-align: center;
+}
+
+/* Estilos para o corpo da páxina */
+body {
+    background-color: aliceblue;
+}

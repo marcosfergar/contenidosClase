@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda de Eventos</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="caja">
+    <h1>Agenda de Eventos 📆</h1>
+
+    <div class="crear_evento">
+      <h2>Añadir Evento</h2>
+
+      <form>
+        <div class="campo">
+          <label for="date">Fecha:</label>
+          <input type="date" name="date" id="date">
+        </div>
+
+        <div class="campo">
+          <label for="text">Nombre del Evento:</label>
+          <input type="text" name="text" id="text" placeholder="Ex: Examen">
+        </div>
+
+        <button class="botonCrear" type="button" onclick="añadirEvento()">Guardar Evento</button>
+      </form>
+    </div>
+
+
+
+
+    <div class="listar_evento">
+      <h2>Proximos Eventos</h2>
+      <div class="opciones-filtro">
+        <button class="botonEvent" type="button" onclick="filtrarEventos('proxSem')">Proxima Semana</button>
+        <button class="botonEvent" type="button" onclick="filtrarEventos('proxMes')">Proximo Mes</button>
+        <button class="botonEvent" type="button" onclick="filtrarEventos('proxAge')">Proximo Año</button>
+        <button class="botonEvent" type="button" onclick="filtrarEventos('todos')">Todos</button>
+      </div>
+
+      <ul id="listaDeEventos">
+
+      </ul>
+    </div>
+  </div>
+
+  <script src="./script.js" defer></script>
+</body>
+
+</html>

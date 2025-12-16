@@ -1,0 +1,46 @@
+/* Estilos do corpo da páxina */
+body {
+    margin: 50px;
+}
+
+/* Contedor do tooltip */
+.tooltip {
+    position: relative; /* Permite posicionar o texto do tooltip relativo a este elemento */
+    display: inline-block; /* Disposición de bloque en liña co resto de elementos */
+    cursor: pointer;
+}
+
+/* Texto do tooltip */
+.tooltip .tooltiptext {
+    visibility: hidden; /* Oculto por defecto */
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute; /* PROBA A ELIMINAR ESTA PROPIEDADE PARA VER O CAMBIO */
+    bottom: 100%; /* Colocámolo por riba do elemento ao que acompaña */
+    left: 50%; /* Centrámolo horizontalmente con respecto ao elemento que acompaña */
+    transform: translateX(-50%); /* Centrámolo */
+    opacity: 0; /* Invisible por defecto */
+    transition: opacity 0.3s;
+    text-align: center;
+    white-space: nowrap; /* Evita que o texto se quebre en varias liñas */
+}
+
+/* Frecha do tooltip (a modo de bocadillo de cómic) */
+.tooltip .tooltiptext::after {
+    content: ""; /* Triángulo decorativo */
+    position: absolute;
+    top: 100%; /* Posición por debaixo do texto */
+    left: 50%; /* Centrámolo horizontalmente */
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent; /* Cor da frecha */
+}
+
+/* Mostra o texto ao pasar o rato */
+.tooltip:hover .tooltiptext {
+    visibility: visible; /* Faise visible */
+    opacity: 1; /* Facémolo opaco */
+}

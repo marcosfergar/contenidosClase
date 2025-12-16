@@ -1,0 +1,14 @@
+#main{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#cookies_actuales{
+    text-align: center;
+    padding: 2%;
+    background-color: aliceblue;
+    border: 2px solid black;
+}

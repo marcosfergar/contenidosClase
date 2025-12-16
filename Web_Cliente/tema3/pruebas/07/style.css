@@ -1,0 +1,15 @@
+.nombreCaja{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#cookies_actuales{
+    margin-top: 10px;
+    width: 40%;
+    text-align: center;
+    padding: 2%;
+    background-color: aliceblue;
+    border: 2px solid black;
+}

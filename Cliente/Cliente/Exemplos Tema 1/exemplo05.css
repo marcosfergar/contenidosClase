@@ -1,0 +1,45 @@
+table,th,td {
+    border: 1px solid black;
+}
+
+/* Aplicamos un selector de atributos e un combinador */
+th[colspan],td[rowspan] {
+    background-color: beige;
+}
+
+/* Aplicamos un selector de atributos indicando un valor para o atributo */
+td[colspan="2"] {
+    background-color: darksalmon;
+}
+
+/* Aplicamos un selector de atributos aos elementos que NON teñan ese atributo */
+td:not([colspan]) { 
+    background-color:azure;
+}
+
+/* Aplicamos un selector de atributos indicando un valor aproximado para o mesmo */
+img[alt~="alternativo"] {
+    width: 200px;
+    height: 100px;
+}
+
+/* ESTILOS PARA OS DISTINTOS ESTADOS DUN HIPERVÍNCULO */
+/* Cando non foi visitado aínda */
+a:link {
+    color: blue;
+}
+
+/* Cando xa foi visitado */
+a:visited {
+    color: orangered;
+}
+
+/* Cando se pasa o cursor do rato por riba */
+a:hover {
+    color: red;
+}
+
+/* Cando se mantén pulsado o rato enriba */
+a:active {
+    color: green;
+}

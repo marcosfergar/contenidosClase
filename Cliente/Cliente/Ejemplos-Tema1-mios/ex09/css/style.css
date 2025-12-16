@@ -1,0 +1,84 @@
+*{
+    font-family: sans-serif;
+}
+.lateral h2{
+    color: black;
+}
+h2{
+    color: rgb(64, 64, 136);
+    font-weight: bold;
+}
+.grid_container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "cabecera cabecera"
+        "menu contenido"
+        "lateral contenido"
+        "pe pe";
+}
+body{
+    background-color: rgb(224, 224, 224);
+    
+}
+
+.cabecera {
+    grid-area: cabecera;
+}
+.menu{
+    grid-area: menu;
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+}
+.menu:hover{
+    text-decoration: underline;
+}
+.contenido{
+    
+    grid-area: contenido;
+}
+.lateral{
+    background-color: rgb(194, 208, 209);
+    
+    grid-area: lateral;
+
+}
+.pe{
+    grid-area: pe;
+}
+header{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(53, 53, 116);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+main{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+aside{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+footer{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(53, 53, 116);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}

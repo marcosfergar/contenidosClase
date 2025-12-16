@@ -1,0 +1,42 @@
+* {
+    font-family: 'Lucida Sans';
+}
+
+form {
+    margin: 30px;
+    width: 500px;
+    padding: 10px;
+}
+
+legend {
+    font-family: 'Lucida Sans';
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 8px;
+    font-family: 'Lucida Sans';
+    font-size: 11pt;
+}
+
+label {
+    font-family: 'Lucida Sans';
+    font-size: 11pt;  
+}
+
+.senEtiqueta {
+    margin: 10px;
+    width: 440px;
+}
+
+#lContrasinal {
+    margin-left: 10px;
+    width: 100px;
+    margin-right: 5px;
+}
+
+#contrasinal {
+    margin-right: 10px;
+    width: 350px;
+}

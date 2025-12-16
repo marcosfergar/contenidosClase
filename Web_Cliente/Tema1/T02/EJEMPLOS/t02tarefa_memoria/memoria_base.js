@@ -36,7 +36,10 @@ function iniciarXogo() {
 
 // Función para renderizar todo o taboleiro usando innerHTML
 function renderizarTaboleiro() {
-    
+    let tablero = document.getElementById("taboleiro");
+
+    tablero.innerHTML=`
+    `
 }
 
 // Lóxica para voltear as cartas

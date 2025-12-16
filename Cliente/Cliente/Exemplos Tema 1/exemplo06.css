@@ -1,0 +1,36 @@
+#primeiro {
+    border: 1px solid black;
+    background-color: lime;
+    height: 90px;
+    width: 150px;
+}
+
+/* Estilos para o div "primeiro" ao manter o rato pulsado sobre el */
+#primeiro:active {
+    background-color: blueviolet;
+}
+
+.codigo::before {
+    content: "Código: ";
+}
+
+/* Estilos para aplicar aos checkbox que están seleccionados */
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px red;
+}
+
+/* Estilo a aplicar aos parágrafos que sexan primoxénitos */
+p:first-child {
+    font-weight: bold;
+}
+
+/* Aplicamos estilos á letra capitular */
+p::first-letter {
+    font-size: 20pt;
+}
+
+/* Aplicamos o estilo aos primeiros parágrafos fillos de cada elemento */
+p:first-of-type {
+    color: blue;
+}
+

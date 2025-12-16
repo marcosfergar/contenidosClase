@@ -1,0 +1,10 @@
+p{
+    background-color: rgb(241, 241, 241);
+    padding: 3%;
+    border-radius: 5px;
+    border-left: 4px solid rgb(69, 208, 255);
+}
+
+p:hover{
+    cursor: pointer;
+}

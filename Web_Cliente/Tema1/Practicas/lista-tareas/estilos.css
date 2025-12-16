@@ -1,0 +1,86 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(226, 226, 226);
+}
+
+.contedor-principal{
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgb(0, 0, 0,0.5);
+
+    margin-top: 200px;
+    padding: 4%;
+    justify-self: center;
+    width: 30%;
+    text-align: center;
+
+
+}
+
+h1{
+    color: aqua;
+}
+
+input{
+    border-radius: 5px;
+    padding: 2%;
+    border: 4px solid rgb(57, 68, 192);
+    width: 50%;
+}
+
+.formulario-tarefa button{
+    width: 30%;
+    color: white;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: rgb(57, 68, 192);
+}
+
+.formulario-tarefa button:hover{
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    
+}
+.elemento-lista{
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    width: 80%;
+    border-radius: 5px;
+    
+    padding: 3%;
+    background-color: rgb(148, 148, 148);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones{
+    display: flex;
+    gap: 20px;
+    margin-right: 5%;
+}
+li button{
+    color: white;
+    background: none;
+    border: none;
+    padding: 5%;
+}
+
+li button:hover{
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+.completada p{
+    text-decoration:line-through;
+}

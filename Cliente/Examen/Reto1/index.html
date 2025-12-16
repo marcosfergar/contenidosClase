@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto1_Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Registro de Usuario</h1>
+        </header>
+
+            <section>
+                <form method="post" action="/send/">
+                    <fieldset>
+                        <legend>Infomación del Usuario</legend>
+                        <div class="form">
+
+
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Ej. Juan" required>
+
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Ej. Pérez" required>
+
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" name="email" id="email" placeholder="Ej. juan.perez@example.com"
+                                required>
+
+                            <label for="telefono">Teléfono:</label>
+                            <input type="text" name="telefono" id="telefono" placeholder="Ej. +34634567890 \ 634567890"
+                                pattern="" required>
+
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Selección de Preferencias</legend>
+                        <table>
+                            <tr>
+                                <th>Opción</th>
+                                <th>Descripción</th>
+                                <th>Seleccionar</th>
+                            </tr>
+                            <tr class="impar">
+                                <td>Básica</td>
+                                <td>Acceso limitado a recursos</td>
+                                <td><input type="checkbox" name="basica"> Elegir</td>
+                            </tr>
+                            <tr>
+                                <td>Premium</td>
+                                <td>Acceso a recursos avanzados</td>
+                                <td><input type="checkbox" name="Premium"> Elegir</td>
+                            </tr>
+                            <tr class="impar">
+                                <td>Empresarial</td>
+                                <td>Acceso completo y personalizado</td>
+                                <td><input type="checkbox" name="Empresarial"> Elegir</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <button type="button" value="Registrar Usuario">Registrar Usuario</button>
+                </form>
+            </section>
+
+
+    </main>
+</body>
+
+</html>

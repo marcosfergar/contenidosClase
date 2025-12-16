@@ -12,7 +12,7 @@ function añadirEvento() {
         let nuevoEvento = {
             id: new Date(),
             nombre: nombreEvento.value,
-            fecha: hoy
+            fecha: new Date(hoy)
         }
 
         nombreEvento.value = '';
@@ -60,23 +60,29 @@ function formatearFecha(fecha) {
 
 
 function filtrarEventos(rango) {
-    let lista = document.getElementById("listaDeEventos");
     let hoy = new Date()
     hoy.setHours(0, 0, 0, 0);
     let fechaLimite = new Date();
     fechaLimite.setHours(0, 0, 0, 0)
-
+    let eventosFiltrados = agenda;
     if (rango == 'proxSem') {
-
-    } else if (rango == 'proxMes') {
-
-    } else if (rango == 'proxAge') {
-
-    } else if (rango == 'todos') {
-
-    }
-
-
+        fechaLimite.setDate(hoy.getDate()+7);
+        eventosFiltrados = agenda.filter((evento) => {
+            return (
+                evento.fecha >= hoy &&
+                evento.fecha <= fechaLimite
+            );
+        })
+} else if (rango == 'proxMes') {
+    fechaLimite.setMonth(hoy.getMonth() + 1);
+    eventosFiltrados = agenda.filter(e => e.fecha >= hoy && e.fecha <= fechaLimite);
+} else if (rango == 'proxAge') {
+    fechaLimite.setFullYear(hoy.getFullYear() + 1);
+    eventosFiltrados = agenda.filter(e => e.fecha >= hoy && e.fecha <= fechaLimite);
+} else if (rango == 'todos') {
+    eventosFiltrados = agenda;
+}
+renderizarEventos(eventosFiltrados);
 }
 
 function editar(id_evento) {

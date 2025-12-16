@@ -1,0 +1,24 @@
+/* Uso do combinador ',' - Aplícase a todos os elementos que aparezan na listaxe */
+p,div {
+    color: red;
+}
+
+/* Uso do combinador ' ' - Aplícase a todos os descendentes en calquera grao */
+a div {
+    color: green;
+}
+
+/* Uso do combinador '>' - Aplícase a todos os descendentes directos e a aqueles indirectos cuxo pai tamén cumpra a regra */
+body > p {
+    color: purple;
+}
+
+/* Uso do combinador '+' - Aplícanse aos irmáns pola dereita, é dicir, a elementos que estean seguidos en HTML */
+div+a {
+    color: gray;
+}
+
+/* Uso do combinador '~' - Aplícase a todos os elementos irmáns (tanto pola esquerda como pola dereita) */
+p~div {
+    color: blue;
+}
