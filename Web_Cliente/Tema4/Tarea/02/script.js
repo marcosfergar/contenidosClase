@@ -20,14 +20,18 @@ class ListaDeTarefas {
 
 
     engadirTarefa(texto) {
-
+        let nuevaTarea = new Tarefa(texto)
+        this.tarefas.push(nuevaTarea);
+        this.tarefas.sort((a,b) => a.texto.localeCompare(b.texto))
     }
 
     alternarCompletada(idTarefa) {
-
+        const tarefa = this.tarefas.find(t => t.id === idTarefa);
+        tarefa.completada = !tarefa.completada;
     }
 
     eliminarTarefa(idTarefa) {
+        this.tarefas = this.tarefas.filter(e => e.id != idTarefa)
     }
 }
 
@@ -37,43 +41,45 @@ class XestorDeListas {
     }
 
     engadirLista(nome) {
-
+        let nuevaLista = new ListaDeTarefas(nome)
+        this.listas.push(nuevaLista)
+        this.listas.sort((a,b) => a.nome.localeCompare(b.nome))
     }
 
     eliminarLista(idLista) {
-
+        this.listas = this.listas.filter(l => l.id != idLista )
     }
 
     obterLista(idLista) {
+        return this.listas.find(e => e.id == idLista );
     }
 
     // Métodos de persistencia
 
     gardarEnLocalStorage() {
-
+        localStorage.setItem('lista', JSON.stringify(this.listas))
     }
 
     cargarDeLocalStorage() {
-        const datosJSON = localStorage.getItem('listasKeep');
-        if (!datosJSON) return [];
+        const datosJSON = localStorage.getItem('listas')
+        if (!datosJSON) {
+            return []
+        }
+        let data = JSON.parse(datosJSON);
+        
+        data.map(e =>{
+            data.nome 
+            let lista = new ListaDeTarefas(e.nome)
+            lista.id = e.id
 
-        const dadosCargados = JSON.parse(datosJSON);
+            lista.tarefas = data.tarefa.map(e =>{
+                let tarea = new Tarefa(e.texto, e.completada)
+                tarea.id = e.id
+                return tarea
+            })
 
-        // É crucial RECONSTRUÍR as instancias de ListaDeTarefas e Tarefa
-        // para que os métodos (p. ex., engadirTarefa) sigan estando dispoñibles.
-        return dadosCargados.map(listaData => {
-            const lista = new ListaDeTarefas(listaData.nome);
-            lista.id = listaData.id;
-
-            // Reconstruír as instancias de Tarefa dentro da lista
-            lista.tarefas = listaData.tarefas.map(tarefaData => {
-                const tarefa = new Tarefa(tarefaData.texto, tarefaData.completada);
-                tarefa.id = tarefaData.id;
-                return tarefa;
-            });
-
-            return lista;
-        });
+            return lista
+        })
     }
 }
 
@@ -87,24 +93,82 @@ const xestor = new XestorDeListas();
 const contedorListas = document.getElementById('contedor-listas');
 const btnNovaLista = document.getElementById('btn-nova-lista');
 
+
 // =============================================================================
 // SECCIÓN 3: XESTIÓN DO DOM E EVENTOS
 // =============================================================================
 
 function renderizarTodasAsListas() {
+    contedorListas.innerHTML=''
+    
+    xestor.listas.forEach(lista =>{
+        let tareasHTML = '';
 
+        lista.tarefas.forEach((tarea, index) => {
+            
+            tareasHTML += `
+                <li>
+                    <input type="checkbox" data-index="${index}">
+                    <span>${tarea.texto}</span>
+                    <button class="btn-eliminar-tarefa" data-lista="${lista.id}" data-id="${tarea.id}">✖</button>
+                </li>
+            `;
+        });
+
+        contedorListas.innerHTML+=`
+        <div class="nota">
+            <h3>${lista.nome}</h3>
+            <ul class="lista-tarefas ">
+                ${tareasHTML}
+            </ul>
+            <button type="button" class="btn-eliminar-nota" data-id="${lista.id}">✖ Eliminar Lista</button>
+            <form class="form-engadir-tarefa">
+                <input type="text" id="${lista.id}" name="tarea" placeholder="nueva Tarea" ><button type="button" data-id="${lista.id}" class="añadirTareaSub">+</button>
+            </form>
+        </div>
+        `
+
+    })
+    
+    añadirEventos();
 }
 
 
-function crearElementoListaDOM(lista) {
+function añadirEventos() {
+    const btnoEliminarLista = document.querySelectorAll(".btn-eliminar-nota");
+    btnoEliminarLista.forEach(btn =>{
+        btn.addEventListener("click",(e) => {
+            xestor.eliminarLista(e.target.dataset.id)     
+            renderizarTodasAsListas();
+        })
+    })
 
+
+    const btnoAñadirTarea = document.querySelectorAll(".añadirTareaSub");
+    btnoAñadirTarea.forEach(btn =>{
+        btn.addEventListener("click",(e) => {
+            let texto = document.getElementById(e.target.dataset.id)
+            let miLista = xestor.obterLista(e.target.dataset.id);            
+            miLista.engadirTarefa(texto.value)
+            renderizarTodasAsListas()
+        })
+    })
+
+
+    const btnoEliminarTarea = document.querySelectorAll(".btn-eliminar-tarefa");
+    btnoEliminarTarea.forEach(btn =>{
+        btn.addEventListener("click", (e)=>{
+            const lista = xestor.obterLista(e.target.dataset.lista);
+            console.log(e.target.dataset.lista);          
+            if (lista) {
+                lista.eliminarTarefa(e.target.dataset.id);
+                renderizarTodasAsListas();
+            }
+        })
+    })
 }
 
 function crearElementoTarefaDOM(idLista, tarefa) {
-
-}
-
-function crearFormularioEngadirTarefa(idLista) {
 
 }
 
@@ -113,29 +177,28 @@ function crearFormularioEngadirTarefa(idLista) {
 // =============================================================================
 
 function novaLista() {
-
+    let nome = prompt("Introduce o nome da nova lista:")
+    if (nome) {
+        xestor.engadirLista(nome)
+        renderizarTodasAsListas();
+    }else{
+    alert("escriba un nombre")
+    }
 }
 
 function eliminarLista(idLista) {
-
-}
-
-function engadirTarefaALista(idLista, texto) {
-
+    xestor.eliminarLista(idLista)
 }
 
 function alternarCompletada(idLista, idTarefa) {
 
 }
 
-function eliminarTarefa(idLista, idTarefa) {
-
-}
-
 // =============================================================================
 // SECCIÓN 5: INICIALIZACIÓN
 // =============================================================================
+document.addEventListener('DOMContentLoaded',() => {
 
-document.addEventListener('DOMContentLoaded', async () => {
-    
+    btnNovaLista.addEventListener("click", novaLista)
+    renderizarTodasAsListas();
 });
